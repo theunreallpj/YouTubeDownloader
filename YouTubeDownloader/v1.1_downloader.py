@@ -5,6 +5,7 @@
 # powered by: 
 # -> PyTube: https://github.com/pytube/pytube
 # -> customtkinter: https://github.com/TomSchimansky/CustomTkinter
+# -> moviepy: https://github.com/Zulko/moviepy
 
 from doctest import master
 from multiprocessing.util import info
@@ -27,7 +28,6 @@ def downloading():
     video_link = link_entry.get()
     actual_path = current_path_label.text
     
-    # webm download
     if format_var.get() == 1:
         yt = YouTube(video_link).streams.get_highest_resolution().download()
         audioclip = VideoFileClip(yt).audio
@@ -37,8 +37,7 @@ def downloading():
         for file in glob.glob("*.mp4"):
             os.remove(file)
         status_label.configure(text="Download was successful")
-    
-    #mp4 download  
+     
     elif format_var.get() == 2:
         yt = YouTube(video_link).streams.get_highest_resolution().download()
         shutil.move(yt, actual_path)
