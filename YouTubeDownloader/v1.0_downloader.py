@@ -1,7 +1,11 @@
+# https://github.com/theunreallpj ©️
 # v1.0 of a YouTube Downloader
 # v1.0 inspired by The Code Dealer, on YT: https://www.youtube.com/c/MacLinzUniversalChannel
-## tutorial link: https://www.youtube.com/watch?v=TEATfq6hPIg&list=WL&index=5&t=1470s
-
+# tutorial link: https://www.youtube.com/watch?v=TEATfq6hPIg&list=WL&index=5&t=1470s
+#
+# powered by: 
+# -> PyTube: https://github.com/pytube/pytube
+# -> customtkinter: https://github.com/TomSchimansky/CustomTkinter
 #changes made by @theunreallpj, on github: https://github.com/theunreallpj
 
 from doctest import master
