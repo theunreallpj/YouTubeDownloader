@@ -25,7 +25,7 @@
 # Installation
 
   1. Download ZIP-File and extract it wherever you want
-  2. make sure you have the latest python version installed
+  2. make sure you have the latest [python](https://www.python.org/downloads/) version installed
   3. Open CMD and go to your directory
   - "cd /yourdirectory/YouTubeDownloader"
   - run `pip3 install -r requirements.txt`
