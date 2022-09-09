@@ -13,8 +13,6 @@ from multiprocessing.util import info
 import customtkinter
 from customtkinter import*
 from tkinter import filedialog
-from moviepy import*
-from moviepy.editor import VideoFileClip
 import pytube
 from pytube import*
 import shutil
@@ -29,8 +27,6 @@ def download():
     save_link = link.get()
     selected_path = current_path_label.text
     yt = YouTube(save_link).streams.get_highest_resolution().download()
-    video_file = VideoFileClip(yt)
-    video_file.close()
     shutil.move(yt, selected_path)
     info_label.configure(text="Your video was downloaded !")
 

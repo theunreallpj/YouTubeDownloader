@@ -1,0 +1,4 @@
+python==3.10.7
+customtkinter==0.3
+pytube==12.1.0
+moviepy==1.0.3
