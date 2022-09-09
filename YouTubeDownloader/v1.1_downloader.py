@@ -11,13 +11,14 @@ from doctest import master
 from multiprocessing.util import info
 import customtkinter
 from customtkinter import*
-from tkinter import filedialog
+from tkinter import IntVar, filedialog
 from moviepy import*
 from moviepy.editor import VideoFileClip
 import pytube
 from pytube import*
 import shutil
 import os
+import sys
 import glob
 
 def browsePath():
