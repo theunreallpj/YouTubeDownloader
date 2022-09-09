@@ -9,6 +9,7 @@
 
 from doctest import master
 from multiprocessing.util import info
+from turtle import delay
 import customtkinter
 from customtkinter import*
 from tkinter import IntVar, filedialog
@@ -36,6 +37,7 @@ def downloading():
         for file in glob.glob("*.mp3"):
             shutil.move(file, actual_path)
         for file in glob.glob("*.mp4"):
+            delay(2)
             os.remove(file)
         status_label.configure(text="Download was successful")
      
