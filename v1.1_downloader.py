@@ -8,11 +8,12 @@
 
 from doctest import master
 from multiprocessing.util import info
+import tkinter
 import customtkinter
 from customtkinter import*
 from tkinter import filedialog
-import pytube
-from pytube import*
+from pytube import YouTube
+from pytube import *
 import os
 from os import path
 import glob
@@ -23,7 +24,7 @@ def browsePath():
     
 def downloading():
     video_link = link_entry.get()
-    actual_path = current_path_label.text
+    actual_path = current_path_label._text
     
     if format_var.get() == 1:
         yt = YouTube(video_link)
